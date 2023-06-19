@@ -4,7 +4,13 @@ import laravel from 'laravel-vite-plugin';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/js/carrusel.js',],
+            /*En este arreglo debes incluir los archivos css y js que necesites para el funcionamiento de
+            tu modula*/
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+                'resources/js/carrusel.js',
+            ],
             refresh: true,
         }),
     ],

@@ -10,7 +10,7 @@
     @yield('head')
 
     <!--Icono de página-->
-    <link rel="icon" href="{{ asset('img/sport.png')}}" />
+    <link rel="icon" href="{{ asset('img/1.ico')}}" />
     <!--Librerias de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -19,11 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
 </head>
 
-<body class="bg-dark">
+<body class="" style="background-color: #EFE670;">
     <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #EFE670;">
         <div class="container-fluid">
-            <a id="1" class="navbar-brand fw-bold text-primary" style="font-size: 25px;" href="/">Fit Sport</a>
+            <a id="1" class="navbar-brand fw-bold text-success" style="font-size: 25px;" href="/">Pan Rico Pan</a>
             <!--Toggler Button Responsive-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,29 +31,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-light fw-bold" style="font-size: 20px;" href="/">Ropa</a>
+                        <a class="nav-link active text-danger fw-bold" style="font-size: 20px;" href="/">Pan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light fw-bold" style="font-size: 20px;" href="/">Calzado</a>
+                        <a class="nav-link active text-danger fw-bold" style="font-size: 20px;" href="/">Pasteles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-danger fw-bold" style="font-size: 20px;" href="/">Recetas</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light fw-bold" href="#" role="button" style="font-size: 20px;" data-bs-toggle="dropdown" aria-expanded="false">Link</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/">Action</a></li>
-                            <li><a class="dropdown-item" href="/">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/">Something else here</a></li>
+                        <a class="nav-link dropdown-toggle text-danger fw-bold" href="#" role="button" style="font-size: 20px;" data-bs-toggle="dropdown" aria-expanded="false">Conócenos</a>
+                        <ul class="dropdown-menu" style="background-color: #EFE670;">
+                            <li><a class="dropdown-item" href="/"><strong>¿Quienes somos?</strong></a></li>
+                            <li><a class="dropdown-item" href="/"><strong>En donde nos ubicamos...</strong></a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-light fw-bold" style="font-size: 20px;" href="/">Iniciar Sesión</a>
+                        <a class="nav-link active text-danger fw-bold" style="font-size: 20px;" href="/">Iniciar Sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light fw-bold" style="font-size: 20px;" href="/">Registro</a>
+                        <a class="nav-link active text-danger fw-bold" style="font-size: 20px;" href="/">Registro</a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +61,8 @@
     @yield('contenidoPrincipal')
 
     <!--Pie de página-->
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top bg-dark">
-        <p class="text-light fw-bold" style="margin-left: 46%">© 2023 Sports</p>
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5" style="display: flex; justify-content: center; background-color: #EFE670;">
+        <p class="" style="color: black; font-weight: bold; text-align: center;">© 2023 Pan Rico Pan</p>
     </footer>
 
     @yield('contenidoJs')
